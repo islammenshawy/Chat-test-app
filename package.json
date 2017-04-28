@@ -4,9 +4,10 @@
   "description": "my first socket.io app",
   "dependencies": {
     "express": "^4.10.2",
+    "newrelic": "^1.38.2",
     "socket.io": "^1.7.2"
   },
-  "scripts":{
+  "scripts": {
     "test": "mocha"
-	}
+  }
 }
