@@ -8,4 +8,6 @@ test:
     - cf api  https://api.run.pivotal.io
     - cf auth $CF_USER_EMAIL $CF_PASSWORD
     - cf target -o proxy.gap.com -s development
-    - cf push
+    - cf push chat-with-me
+    - cf create-service newrelic standard chat_app
+    - cf bind-service chat-with-me chat_app
