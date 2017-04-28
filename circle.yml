@@ -11,3 +11,4 @@ test:
     - cf push chat-with-me
     - cf create-service newrelic standard chat_app
     - cf bind-service chat-with-me chat_app
+    - cf restage chat-with-me
