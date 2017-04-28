@@ -1,7 +1,7 @@
+require('newrelic');
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-var newrelic = require('newrelic');
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/login.html');
