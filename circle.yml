@@ -9,7 +9,7 @@ test:
     - cf auth $CF_USER_EMAIL $CF_PASSWORD
     - cf target -o proxy.gap.com -s development
     - cf push chat-with-me
-    - cf set-env chat-with-me NEWRELIC_LICENSE $NEW_RELIC_LICENSE_KEY
+    - cf set-env chat-with-me NEW_RELIC_LICENSE_KEY $NEW_RELIC_LICENSE_KEY
     - cf create-service newrelic standard chat_app
     - cf bind-service chat-with-me chat_app
     - cf restage chat-with-me
